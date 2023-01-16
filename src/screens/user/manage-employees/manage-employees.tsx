@@ -1,8 +1,6 @@
-import React, {FC, Fragment} from 'react';
+import React, { Fragment} from 'react';
 import {View, StyleSheet} from 'react-native';
-import {useSelector} from "react-redux";
-import {IStore} from "../../../redux/auth/auth.types";
-import {Button, GroupManagement, P, UserForm} from "../../../components";
+import {Button, GroupManagement, P} from "../../../components";
 import {employees} from "../../../helpers/helpers";
 import {Fonts} from "../../../styles/styles";
 import {useNavigation} from "@react-navigation/native";

@@ -1,4 +1,5 @@
 import axios, { AxiosRequestConfig } from "axios";
+import { IStore } from "../redux/auth/auth.types";
 import { store } from "../redux/store";
 
 // Checking if an application is in development is used by the dev.com URL,
@@ -15,7 +16,7 @@ const instance = axios.create({
 
 // AXIOS GLOBAL CONFIG
 instance.interceptors.request.use((request: AxiosRequestConfig | any) => {
-  const reduxStore: { auth: { token: string } } = store.getState();
+  const reduxStore: IStore = store.getState();
   const token = reduxStore.auth?.token;
   if (token) {
     request.headers ["Authorization"] = "Bearer " + token;
