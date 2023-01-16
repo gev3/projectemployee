@@ -2,7 +2,7 @@ import React,{FC} from "react";
 import { StyleSheet, TouchableOpacity, View, ImageBackground } from "react-native";
 import { Modal as DefModal, Portal } from "react-native-paper";
 import ImageCropPicker from "react-native-image-crop-picker";
-import { P } from "../P/P";
+import { P } from "../p/p";
 import { Colors } from "../../styles/styles";
 import { VectorIcon } from "../vector-icon/vector-icon";
 

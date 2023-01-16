@@ -81,10 +81,10 @@ const styles = StyleSheet.create({
   },
   inputWrapper: {
     borderRadius: 30,
-    width: 300,
+    width: 330,
     marginVertical: 7,
     backgroundColor: Colors.inputBackground,
     justifyContent: "center",
-    height: 50
+    height: 45
   }
 });

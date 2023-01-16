@@ -1,23 +1,23 @@
 import React from "react";
-import { SafeAreaView } from "react-native";
-import { NavigationContainer } from "@react-navigation/native";
-import { AuthNavigation } from "../auth/auth";
-import { useSelector } from "react-redux";
+import {SafeAreaView} from "react-native";
+import {NavigationContainer} from "@react-navigation/native";
+import {AuthNavigation} from "../auth/auth";
+import {useSelector} from "react-redux";
+import {IStore} from "../../redux/auth/auth.types";
+import {UserNavigation} from "../user/user";
 
 
 const Navigation = () => {
-  // const token = useSelector((state) => state.auth.token);
-  const token = false;
+    const token = useSelector((state: IStore) => state.auth.token);
 
 
-  return (
-    <NavigationContainer>
-      <SafeAreaView style={{flex: 1}}>
-        {/*{token ? <UserNavigation /> : <AuthNavigation />}*/}
-        <AuthNavigation />
-      </SafeAreaView>
-    </NavigationContainer>
-  );
+    return (
+        <NavigationContainer>
+            <SafeAreaView style={{flex: 1}}>
+                {token ? <UserNavigation/> : <AuthNavigation/>}
+            </SafeAreaView>
+        </NavigationContainer>
+    );
 };
 
 export default Navigation;

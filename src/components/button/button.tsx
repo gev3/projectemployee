@@ -2,7 +2,7 @@ import React from "react";
 import { FC } from "react";
 import { TouchableOpacity, StyleSheet } from "react-native";
 import { Colors } from "../../styles/styles";
-import { P } from "../P/P";
+import { P } from "../p/p";
 
 interface IButton {
   body: string,

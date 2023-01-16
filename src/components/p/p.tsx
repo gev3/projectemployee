@@ -3,7 +3,7 @@ import {StyleSheet, Text, TextStyle} from 'react-native';
 import { Colors, Fonts } from '../../styles/styles';
 
 interface localProps {
-  children: string;
+  children: string | JSX.Element;
   style?: TextStyle | {};
 }
 

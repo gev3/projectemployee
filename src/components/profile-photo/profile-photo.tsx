@@ -2,7 +2,7 @@ import React, { memo, FC, Fragment, useState } from "react";
 import { View, Image, TouchableOpacity } from "react-native";
 import { Colors } from "../../styles/styles";
 import { ImageModal } from "../image-modal/image-modal";
-import { P } from "../P/P";
+import { P } from "../p/p";
 import * as Animatable from "react-native-animatable";
 
 interface IChange {
