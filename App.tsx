@@ -5,8 +5,9 @@ import Toast from "react-native-toast-message";
 import { persistor, store } from "./src/redux/store";
 import Navigation from "./src/navigation/root-navigation/root-navigation";
 import { Provider as PaperProvider } from "react-native-paper";
-
 const App = () => {
+
+
   return (
     <PaperProvider>
       <Provider store={store}>
