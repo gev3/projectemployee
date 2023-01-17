@@ -109,11 +109,11 @@ export const UserForm: FC<{ isProfile: boolean }> = ({isProfile}) => {
                     onPress={() => handleGetCoords()}/>}
                 <Button body={isProfile ? 'Save' : "Next"} onPress={handleSubmit} width={"40%"}
                         style={{marginTop: 20}}/>
-                <Button body={'Share my information'} onPress={async () => await Share.share({
-                    title: 'TestApp',
-                    message: `${[user?.image, user?.first_name, user?.last_name, user?.department, user?.job_title].join(' ')}`,
+                {isProfile && <Button body={"Share my information"} onPress={async () => await Share.share({
+                    title: "TestApp",
+                    message: `${[user?.image, user?.first_name, user?.last_name, user?.department, user?.job_title].join(" ")}`
                 })} width={"60%"}
-                        style={{marginTop: 20}}/>
+                         style={{ marginTop: 20 }} />}
             </ScrollView>
         </KeyboardAvoidingView>
     );

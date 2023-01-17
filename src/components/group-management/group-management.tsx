@@ -88,7 +88,7 @@ export const GroupManagement: FC<IGroup> = ({members}) => {
                 <FlatList
                     data={result}
                     renderItem={renderItem}
-                    style={{maxHeight: 100}}
+                    style={{maxHeight: 150}}
                     keyExtractor={(item: IEmployee) => item.id.toString()}
                     ListFooterComponent={<Fragment>
                         {(!!value && !result?.length) && <P>Not found</P>}
@@ -114,7 +114,6 @@ const styles = StyleSheet.create({
         width: w,
         backgroundColor: 'rgba(189,189,189,0.25)',
         flexDirection: 'row',
-        // justifyContent: 'center',
         alignItems: 'center',
         height: 40,
         borderTopRightRadius: 10,

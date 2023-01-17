@@ -4,7 +4,7 @@ export const Colors = {
     p: '#676A6D',
     white: '#fff',
     black: '#000',
-    placeholder: '#ccc',
+    placeholder: '#ababab',
     inputBackground: '#8C8C8C38',
     employeeBackground: 'rgba(59,152,206,0.19)',
     red: '#d92c2c',
